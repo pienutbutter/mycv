@@ -8,25 +8,24 @@
   <!-- Include Font Awesome CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
+    /* CSS Styles */
     /* Style the body */
     body {
       font-family: Arial, Helvetica, sans-serif;
     }
-
     /* Increase the font size of the heading */
     .w3-container h1 {
       font-size: 30px;
       color: white;
     }
-
     /* Style the top navigation bar */
     .w3-bar {
       background-color: #bdd5e9;
       display: flex;
       justify-content: center;
+      font-size: 15px;
       flex-wrap: wrap; /* Allow items to wrap to the next line */
     }
-
     /* Style the navigation bar links */
     .w3-bar a {
       color: white;
@@ -36,26 +35,22 @@
       flex: 1; /* Equal width for each link */
       max-width: 200px; /* Limit max width for larger screens */
     }
-
-    /* Change color on hover */
+    /* Change color on hover for skill option */
     .w3-bar a:hover {
       background-color: #16495e;
       color: black; /* for text color */
     }
-
     /* Header */
     .header {
       background-color:#dde2f0;
       padding: 20px;
     }
-
     /* Column container */
     .w3-row {  
       display: flex;
       flex-wrap: wrap; /* Allow items to wrap to the next line */
     }
-
-    /* Sidebar/left column */
+    /* left side column  */
     .w3-col.side {
       flex: 100%; /* Full width on smaller screens */
       background-color: #dde2f0;
@@ -64,32 +59,26 @@
       flex-direction: column;
       align-items: center; /* Center horizontally */
     }
-
     /* Main column */
     .w3-col.main {   
       flex: 100%; /* Full width on smaller screens */
       background-color: white;
       padding: 20px;
     }
-
     /* Footer */
     .w3-container.footer {
       text-align: center;
       background: #4c7177;
       padding: 10px;
     }
-
     /* Footer text color */
     .footer p {
     color: white;
     }
-
-
     /* Navigation bar background color */
     .nav-bar {
       background-color: #22425c;
     }
-
     /* Set specific title colors */
     .w3-col h2,
     .header h1,
@@ -97,24 +86,20 @@
     .w3-col.main h5 {
       color: #000000;
     }
-
     /* Set color for h2 */
     .w3-col.main h2,
     .w3-col.side h2 {
       color: #22425c;
     }
-
     /* Justify text */
     .w3-col.side p {
       text-align: justify;
     }
-
     /* Style contact icons */
     .contact-icons {
       font-size: 24px;
       margin-right: 5px;
     }
-
     /* Accordion style */
     .accordion {
       background-color: #22425c;
@@ -128,18 +113,15 @@
       transition: 0.4s;
       margin-bottom: 5px;
     }
-
     .active, .accordion:hover {
       background-color: #4c7177;
     }
-
     .panel {
       padding: 0 18px;
       display: none;
       background-color: rgb(251, 255, 255);
       overflow: hidden;
     }
-
     /* Style dropdown */
     .dropdown-content {
       display: none;
@@ -149,51 +131,42 @@
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
     }
-
     .dropdown-content a {
       color: black;
       padding: 12px 16px;
       text-decoration: none;
       display: block;
     }
-
     .dropdown-content a:hover {
       background-color: #4c7177;
     }
-
     .dropdown:hover .dropdown-content {
       display: block;
     }
-
     /* Media queries for responsiveness */
     @media screen and (min-width: 768px) {
       .w3-col {
         flex: 50%; /* Two columns side by side */
       }
-
       .w3-col.side {
         flex: 30%; /* Sidebar takes up 30% of the width */
         max-width: 30%; /* Limit max width */
       }
-
       .w3-col.main {
         flex: 70%; /* Main content takes up 70% of the width */
         max-width: 70%; /* Limit max width */
       }
     }
-
     /* Slideshow container */
     .slideshow-container {
       max-width: 100%;
       position: relative;
       margin-top: 20px;
     }
-
     /* Slides */
     .mySlides {
       display: none;
     }
-
     /* Next & previous buttons */
     .prev, .next {
       cursor: pointer;
@@ -209,24 +182,20 @@
       border-radius: 0 3px 3px 0;
       user-select: none;
     }
-
     /* Position the "next button" to the right */
     .next {
       right: 0;
       border-radius: 3px 0 0 3px;
     }
-
     /* On hover, add a black background color with a little bit see-through */
     .prev:hover, .next:hover {
       background-color: rgba(0,0,0,0.8);
     }
-
     /* Position the indicators */
     .dot-container {
       text-align: center;
       margin-top: 20px;
     }
-
     .dot {
       cursor: pointer;
       height: 15px;
@@ -237,7 +206,6 @@
       display: inline-block;
       transition: background-color 0.6s ease;
     }
-
     .active-dot, .dot:hover {
       background-color: #717171;
     }
@@ -249,7 +217,6 @@
     <div class="w3-container w3-center">
       <h1>Hafizah Zaini</h1>
       <h5>Intership placement: IT Support</h5>
-      <!-- Email and LinkedIn Links with Text -->
       <p>
         <i class="fas fa-envelope contact-icons"></i>
         Email: <a href="mailto:hafizahzaini21@gmail.com" style="text-decoration: none; color: inherit;">hafizahzaini21@gmail.com</a>
@@ -261,7 +228,7 @@
     </div>
   </div>
 
-  <!-- Navigation bar with separate background color -->
+  <!-- Navigation bar-->
   <div class="w3-container w3-bar nav-bar">
     <a href="#education" class="w3-bar-item w3-button w3-hover-teal">Education</a>
     <a href="#experience" class="w3-bar-item w3-button w3-hover-teal">Experience</a>
@@ -334,37 +301,6 @@
         <span class="dot" onclick="currentSlide(2)"></span>
       </div>
 
-      <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-          }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active-dot", "");
-          }
-          slides[slideIndex-1].style.display = "block";
-          dots[slideIndex-1].className += " active-dot";
-        }
-      </script>
-
       <h2 id="project">Project </h2>
       <h3>Nutrition Recommendation App</h3>
       <p>- Developed a mobile application for personalized nutrition recommendations.</p>
@@ -379,7 +315,6 @@
       <p> - AJK Entrepreneurship sharig session (2022)</p>
     </div>
   </div>
-
   <div class="w3-container w3-center footer" id="footer">
     <h2>Contact</h2>
     <p><i class="fas fa-envelope contact-icons"></i> Email: hafizahzaini21@gmail.com</p>
@@ -387,6 +322,7 @@
   </div>
 
   <script>
+    // JavaScript Code
     var acc = document.getElementsByClassName("accordion");
     var i;
 
@@ -400,6 +336,35 @@
           panel.style.display = "block";
         }
       });
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active-dot", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active-dot";
     }
   </script>
 
